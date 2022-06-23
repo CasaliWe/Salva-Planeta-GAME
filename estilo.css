@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Container*/
+#container{
+    background-image: url('./img/casaBranca.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin: 10px auto;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#campo-jogo {
+    width: 365px;
+    height: 420px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 10px;
+}
+
+
+
+
+/*Index inicializar game*/
+#campo-jogo-index{
+    width: 365px;
+    height: 420px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#campo-jogo-index h1{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#campo-jogo-index h2{
+    margin-bottom: 5px;
+    text-align: center;
+    color: orangered;
+}
+
+#campo-jogo-index label{
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#campo-jogo-index p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#btn-inicial-index{
+    width: 40%;
+    padding: 5px 10px;
+    border: 1px solid orangered;
+    background-color: orangered;
+    color: white;
+    border-radius: 7px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Personagem*/
+.personagem {
+    width: 55px;
+    position: absolute;
+}
+
+
+/*Tempo e placar*/
+#tempo-placar {
+    width: 300px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/*msg final*/
+#msg-final {
+    position: absolute;
+    top: 150px;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    display: none;
+}
+
+
+/*Barra com resultado*/
+#barra-final {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 0vh;
+    overflow: hidden;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.884);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#barra-final div {
+    width: 40%;
+    text-align: center;
+}
+
+#barra-final h1 {
+    margin-bottom: 10px;
+    color: red;
+}
+
+#barra-final p {
+    margin: 5px;
+}
+
+#barra-final p:nth-child(2) {
+    color: orangered;
+    font-size: 20px;
+}
+
+
+
+/*btn reestar*/
+#reestart {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px solid orangered;
+    color: white;
+    background-color: orangered;
+}
+
+#reestart:hover {
+    color: black;
+    cursor: pointer;
+}
+
+
+
+/*Btn sair*/
+#sair {
+    padding: 5px 10px;
+    border: 1px slid red;
+    background-color: red;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+/*Contagem regressiva*/
+#contagem-regress {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    color: black;
+}
+
