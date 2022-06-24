@@ -40,13 +40,13 @@ function funcInicio(){
 
          //Pegando personagem e tamanho da tela do jogo
          var personagem = document.querySelector('.personagem')
-         var largura = 365 //igual ao px do container
+         var largura = 350 //igual ao px do container
          var altura = 420  //igual ao px do container 
 
 
 
         //Posição aleatória do personagem      
-        var geraPersonagem = setInterval(randomPersonagem, 600);
+        var geraPersonagem = setInterval(randomPersonagem, 800);
 
         function randomPersonagem(){       
             var positionTop =  Math.floor(Math.random() * altura)

@@ -21,7 +21,7 @@
 }
 
 #campo-jogo {
-    width: 365px;
+    width: 350px;
     height: 420px;
     position: relative;
     background-color: rgba(255, 255, 255, 0.212);
@@ -66,6 +66,11 @@
     text-align: center;
 }
 
+#txtTempo {
+    width: 30%;
+    padding: 3px;
+}
+
 #btn-inicial-index{
     width: 40%;
     padding: 5px 10px;
@@ -102,6 +107,10 @@
     background-color: black;
     padding: 10px;
     border-radius: 10px;
+}
+
+#tempo-placar p {
+    margin: 5px;
 }
 
 
@@ -177,6 +186,7 @@
     border-radius: 5px;
     margin-top: 10px;
     cursor: pointer;
+    width: 30%;
 }
 
 
