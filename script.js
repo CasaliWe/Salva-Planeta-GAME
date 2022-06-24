@@ -13,20 +13,45 @@ function funcIndex(){
 
 //Funções da file inicio
 function funcInicio(){
+
+         
+         //Efeito sonoro
+         const tome = new Audio()
+         tome.src = "./song/tome.mp3"
+         const tiro = new Audio()
+         tiro.src = "./song/tiro.mp3"
+         const vitoria = new Audio()
+         vitoria.src = "./song/vitoria-song.mp3"
+         const regress = new Audio()
+         regress.src = "./song/regres.mp3"
+         const trilhaa = new Audio()
+         trilhaa.src = "./song/trilhaa.mp3"
+
+
+
+         //Som de tiro a cada clique
+         document.getElementById('campo-jogo').addEventListener('click', ()=>{
+               tiro.play()
+         })
+
+
+
          
          //Contagem inical
          var inicalContagem = 3
          var diminui = setInterval(() => {
               document.getElementById('contagem-regress').textContent = `${inicalContagem}`
               inicalContagem--
+              regress.play()
          }, 1000);
          
     //Clear contagem inicial e INICIO DO JOGO
     setTimeout(() => {
                document.getElementById('contagem-regress').remove()
                clearInterval(diminui)
+               trilhaa.play()
                
-
+               
         //Pontuação geral
          var pGeral = 0  
          var pLula = 0
@@ -79,6 +104,7 @@ function funcInicio(){
         //Acertando o personagem click
         document.querySelector('.personagem').addEventListener('click', ()=>{
             personagem.style.display = 'none'
+            tome.play()
             acertouClick();
             pGeral++
             document.getElementById('mortes').textContent = `Mortes: ${pGeral}`
@@ -113,6 +139,7 @@ function funcInicio(){
                    clearInterval(cronometro)
                    personagem.style.display = 'none'
                    document.getElementById('msg-final').style.display = 'block'
+                   vitoria.play()
                    
                     //Inserir pontos na barra resultado final
                     document.getElementById('resTotal').textContent = `Total de mortes: ${pGeral}`
