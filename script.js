@@ -74,8 +74,11 @@ function funcInicio(){
         var geraPersonagem = setInterval(randomPersonagem, 800);
 
         function randomPersonagem(){       
-            var positionTop =  Math.floor(Math.random() * altura)
-            var positionLeft = Math.floor(Math.random() * largura)
+            var positionTop =  Math.floor(Math.random() * altura) - 80
+            var positionLeft = Math.floor(Math.random() * largura) - 80
+
+            positionTop = positionTop < 0 ? 0 : positionTop
+            positionLeft = positionLeft < 0 ? 0 : positionLeft
 
             personagem.style.top = positionTop + 'px'
             personagem.style.left = positionLeft + 'px'
